@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>Doctor Details</title>
+    <link href="../../app/css/NH.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <br/><br/><br/>
+
+<div class="container">
+<section>
+<div id="container_demo">
+
+<form>
+
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Name</label>
+    <div class="col-sm-10">
+      <input class="id1" id="name" placeholder="Name">
+    </div>
+    </div>
+  <br/>
+  <br/>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Age</label>
+    <div class="col-sm-10">
+      <input class="id1" id="age" placeholder="Age">
+    </div>
+    </div>
+<br/>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Speciality</label>
+    <div class="col-sm-10">
+      <input class="id1" id="spec" placeholder="Speciality">
+    </div>
+    </div>
+<br/>
+
+    <div class="form-group">
+    <div class="col-sm-10">
+    <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.adddoctor();return false;" >
+     ADD DOCTOR DETAILS</button>
+     <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.getappdetails();return false;" >
+      APPOINTMENT PATIENT DETAILS</button>
+    </div>
+  </div>
+</form>
+<br/>
+<br/>
+
+<form class="form-horizontal" id="patientappt" style="visibility: hidden;">
+  <div class="form-group">
+              <label  for="usr">Paitnet ID</label>
+              <div class="col-sm-10">
+              <label  id="apid" for="act"></label>
+            </div>
+    </div>
+    <div class="form-group">
+                <label  for="usr">Paitnet Name</label>
+                <div class="col-sm-10">
+                <label  id="apname" for="act"></label>
+              </div>
+      </div>
+
+      <div class="form-group">
+                  <label  for="usr">Paitnet Address</label>
+                  <div class="col-sm-10">
+                  <label  id="apadd" for="act"></label>
+                </div>
+        </div>
+        <div class="form-group">
+
+                    <div class="col-sm-10">
+                      <button class="btn btn-primary"  type="button" onclick="App.rqpay();return false;">
+                     			Reuqest to Pay </button>
+                  </div>
+          </div>
+
+
+</form>
+
+
+
+
+
+</div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../javascripts/bootstrap.min.js"></script>
+   <script src="../javascripts/web3.min.js"></script>
+   <script src="../javascripts/truffle-contract.js"></script>
+<script src="../javascripts/app1.js"></script>
+
+
+
+</body>
+
+</html>

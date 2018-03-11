@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>Doctor Appointment</title>
+    <link href="../../app/css/NH.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <br/><br/><br/>
+
+<div class="container">
+<section>
+<div id="container_demo">
+
+<form>
+  <br/>
+  <br/>
+
+    <div class="form-group">
+    <div class="col-sm-10">
+    <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.getdct();return false;">
+     GET DOCTOR DETAILS</button>
+    </div>
+  </div>
+
+
+</form>
+<div id="form_patient" style="visibility: hidden;">
+<form class="form-horizontal" >
+  <div class="form-group">
+              <label  for="usr">Doctor ID</label>
+              <div class="col-sm-10">
+              <label  id="docid" for="act"></label>
+            </div>
+    </div>
+    <div class="form-group">
+                <label  for="usr">Doctor Name</label>
+                <div class="col-sm-10">
+                <label  id="docname" for="act"></label>
+              </div>
+      </div>
+
+      <div class="form-group">
+                  <label  for="usr">Doctor Speciality</label>
+                  <div class="col-sm-10">
+                  <label  id="docspec" for="act"></label>
+                </div>
+        </div>
+      <div class="form-group">
+                  <label  for="usr">Doctor Address</label>
+                  <div class="col-sm-10">
+                  <label  id="dadd" for="act"></label>
+                </div>
+        </div>
+        <div class="form-group">
+        <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.getconfirm();return false;">
+         APPOINTMENT CONFIRM</button>
+       </div>
+</form>
+</div>
+
+</div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../javascripts/bootstrap.min.js"></script>
+   <script src="../javascripts/web3.min.js"></script>
+   <script src="../javascripts/truffle-contract.js"></script>
+<script src="../javascripts/app1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>Patient Details</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <br/><br/><br/>
+
+<div class="container">
+<section>
+<div id="container_demo">
+
+<form>
+
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Name</label>
+    <div class="col-sm-10">
+      <input class="id1" id="name" placeholder="Name">
+    </div>
+    </div>
+  <br/>
+  <br/>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Age</label>
+    <div class="col-sm-10">
+      <input class="id1" id="age" placeholder="Age">
+    </div>
+    </div>
+<br/>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Weight</label>
+    <div class="col-sm-10">
+      <input class="id1" id="weight" placeholder="Weight">
+    </div>
+    </div>
+<br/>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Height</label>
+    <div class="col-sm-10">
+      <input class="id1" id="height" placeholder="Height">
+    </div>
+    </div>
+    <div class="form-group">
+    <div class="col-sm-10">
+    <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.addpatient();return false;" >
+     ADD PATIENT DETAILS</button>
+     <button  class="btn btn-primary"  id="btn_appt" type="button" onclick="App.getpatient();return false;" >
+      PATIENT DETAILS</button>
+      <a href="http://localhost:8080/app/Appointment/Appointment.html">
+      <button class="btn btn-primary"  type="button" onclick="App.getappt();return false;">
+     			GET DOCTOR APPOINTMENT </button></a>
+    </div>
+  </div>
+</form>
+  <form class="form-horizontal" id="form_patient" style="visibility: hidden;">
+    <div class="form-group">
+                <label  for="usr">Paitnet ID</label>
+                <div class="col-sm-10">
+                <label  id="pid" for="act"></label>
+              </div>
+      </div>
+      <div class="form-group">
+                  <label  for="usr">Paitnet Name</label>
+                  <div class="col-sm-10">
+                  <label  id="pname" for="act"></label>
+                </div>
+        </div>
+
+        <div class="form-group">
+                    <label  for="usr">Paitnet Address</label>
+                    <div class="col-sm-10">
+                    <label  id="padd" for="act"></label>
+                  </div>
+          </div>
+  </form>
+
+</div>
+
+</section>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/web3.min.js"></script>
+    <script src="../javascripts/truffle-contract.js"></script>
+<script src="../javascripts/app1.js"></script>
+
+
+</body>
+
+</html>
